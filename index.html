@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 - Confirmation Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mySection">
+        <div>
+            <button class="btn triggerBtn" id="triggerBtn" onclick="triggerFunction()">Delete</button>
+        </div>
+        <div class="modal" id="modal">
+            <p class="question">Are you sure you want to delete?</p>
+            <p class="prompt">This action cannot be undone</p>
+            <div class="modalBtns">
+                <button class="btn cancelBtn">Cancel</button>
+                <button class="btn deleteBtn">Delete</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function triggerFunction(){
+        document.getElementById("modal").classList.toggle("show");
+    }
+</script>
+</html>

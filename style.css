@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mySection{
+    position: relative;
+    font-family: Poppins;
+}
+
+.btn{
+    padding: 0.25rem .5rem;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    display: none;
+}
+
+.question{
+    padding: 1rem 0.5rem;
+    background-color: #ddd;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.prompt{
+    padding: 1.5rem 0.5rem;
+}
+
+.modalBtns{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 1rem 0.5rem;
+    background-color: #eee;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.deleteBtn{
+    background-color: rgb(167, 92, 92);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(167, 92, 92);;
+}
+
+.show{
+    display: block;
+}
